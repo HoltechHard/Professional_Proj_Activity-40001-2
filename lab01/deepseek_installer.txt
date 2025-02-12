@@ -1,0 +1,64 @@
+=====================================================
+|		LAB 01: RUNNING DEEK_SEEK-R1 LOCALLY		|
+=====================================================
+
+- EXERCISE 01: RUN DEEPSEEK LOCALLY IN TERMINAL
+
+1) Go to the official web site of ollama: https://ollama.com/
+
+2) Download DeepSeek-R1-8b model. It requires 4.9 GB of RAM memory
+
+3) Run in Windows PowerShell the next command:
+
+$ ollama run deepseek-r1:8b
+
+>>> .... <here make your own questions>
+
+
+- EXERCISE 02: RUN DEEPSEEK LOCALLY USING WEB UI
+
+1) Install and run Docker
+
+2) Run Open WebUI container: using terminal commands
+
+official web site documentation of open webui: https://docs.openwebui.com/getting-started/quick-start/ 
+
+$ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+in the case when computational resources are not enough, we can define 200% CPU and 8 GB of RAM 
+
+$ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always --cpus="2.0" --memory="8g" ghcr.io/open-webui/open-webui:main
+
+3) Run Open WebUI container: using yaml file 
+
+- formulate the code docker-compose.yml 
+
+- run the command: 
+
+$ docker-compose up -d
+
+4) In windows OS need go to Menu/Windows Features and check the option Virtual Machine Platform activated
+
+5) Check the container open-webui and go to localhost:3000 and sign in to Open WebUI
+
+
+- EXERCISE 03: RUN DEEPSEEK LOCALLY IN DESKTOP WITH LM STUDIO 
+
+1) Go to LM Studio and search DeepSeek-R1-Distill-Qwen-7B-Q3_K_S.gguf (3.49 GB)
+
+2) Run in chatbot of lm studio
+
+
+- EXERCISE 04: RUN DEEPSEEK USING CLUSTER WITH P2P NETWORK
+
+1) Go to Exo labs in the github main page: https://github.com/exo-explore/exo
+
+2) Run the next set of commands 
+
+$ git clone https://github.com/exo-explore/exo.git
+$ cd exo
+$ python -m venv exo_env
+$ .\exo_env\Scripts\activate
+$ pip install -e .
+$ source install.sh
+
