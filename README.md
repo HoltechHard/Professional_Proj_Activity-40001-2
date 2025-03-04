@@ -1,13 +1,44 @@
 # Professional Project Activity - 5130203/40001-2  
 
+* Цель   
+Курс «Введение профессиональную деятельность» призван предоставить студентам специальности "Математика и компьютер науки - Направление: Математическое обеспечение и администрирование информационных систем» практические основы, необходимые необходимо для внедрения небольших инженерных решений в таких важных областях, как **искусственный интеллект**, **наука о данных**, **аналитика**, **большие данные** и **вычислительная математика**, посредством ознакомления с программными инструментами, чтобы студенты получили начальный опыт для будущих реальных профессиональных проектов.  
 
-1) Introduction to LLM and RAG  
-Inference use-cases for LLM and simple integration RAG with Langchain
-2) Data Science  
-Data preprocessing, visualization and analysis with Pandas, Numpy, Matplotlib, Seaborn and Jupyter
-3) Databases  
-Practical uses for Relational SQL databases and NoSQL
-4) Fundamentals of Big Data Analytics  
-Notions of data engineering with PySpark and PyFlink
-5) Computational-Mathematical modeling  
-Modeling and algorithmizing mathematical and physical problems using numerical methods with Python
+* Организации предмед  
+
+**Условые:**
+1) Студенты будут организованы в группы по 4 человека для выполнения домашних заданий;  
+2) Студентам необходимо будет создать одну «организацию» в Github, объединив учетные записи в одну общую среду для работы с репозиториями домашних заданий;  
+3) На протяжении курса рассматриваются 4 основные темы. В конце каждой темы будет дано домашнее задание по группы.  
+
+**Список тем:**  
+1) Введение в LLM и Prompt Engineering с RAG   
+Случаи использования вывода для LLM и простая интеграция RAG с Langchain  
+2) Наука о данных   
+Предварительная обработка, визуализация и анализ данных с Pandas, Numpy, Matplotlib, Seaborn и Jupyter
+3) Базы данных   
+Практическое использование реляционных баз данных SQL и NoSQL
+4) Основы аналитики больших данных  
+Понятия инженерии данных с PySpark и PyFlink  
+
+### Урок 01.2 - Prompt Engineering с RAG   
+------------------------------------------  
+
+**Главные Подтемы:**  
+  * Введение в Prompt Engineering: https://drive.google.com/file/d/1j4G4D2LKpMi1HOCEmOyZylloWO4401js/view  
+  * Веб-сканирование  
+  * Обобщение  
+  * Создание векторных вложений с помощью векторной базы данных FAISS  
+  * Использование streamlit для пользовательского веб-приложения чат-бота  
+  * Интеграция LLM с RAG с помощью Langchain  
+  
+### Урок 01.1 - Введение в LLM  
+---------------------------------  
+
+**Главные Подтемы:**  
+  * Введение в LLM: https://drive.google.com/file/d/1j4G4D2LKpMi1HOCEmOyZylloWO4401js/view    
+  * Запуск deepseek-r1 локально через терминал  
+  * Запуск deepseek-r1 локально с помощью WebUI + Docker-контейнера  
+  * Запуск deepseek-r1 с помощью LM-studio  
+  * Создание сети P2P для запуска deepseek-r1 в кластере  
+
+
