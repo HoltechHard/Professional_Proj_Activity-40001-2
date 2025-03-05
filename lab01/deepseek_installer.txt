@@ -53,7 +53,11 @@ $ docker-compose up -d
 
 1) Go to Exo labs in the github main page: https://github.com/exo-explore/exo
 
-2) Run the next set of commands 
+2) command to install git 
+
+$ apt install git -y
+
+3) Run the next set of commands
 
 $ git clone https://github.com/exo-explore/exo.git
 $ cd exo
@@ -62,3 +66,8 @@ $ .\exo_env\Scripts\activate
 $ pip install -e .
 $ source install.sh
 
+in linux OS
+
+$ python -m venv --without-pip exo_env
+$ source exo_env/bin/activate
+$ source install.sh
