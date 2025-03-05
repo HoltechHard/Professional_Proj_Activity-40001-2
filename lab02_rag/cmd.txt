@@ -1,0 +1,24 @@
+=========================================
+|       LIST OF COMMANDS TO RUN APP     |
+=========================================
+
+1) create python environment
+
+$ python -m venv projact_env
+
+2) activate python environment
+
+$ .\projact_env\Scripts\activate
+
+3) install all python packages
+
+$ cd lab02_rag
+$ pip install -r requirements.txt
+
+4) install dependency necessary to make web crawl 
+
+$ playwright install
+
+5) run the streamlit application 
+
+$ streamlit run app.py
