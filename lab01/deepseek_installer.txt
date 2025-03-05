@@ -59,6 +59,8 @@ $ apt install git -y
 
 3) Run the next set of commands
 
+* in windows OS
+
 $ git clone https://github.com/exo-explore/exo.git
 $ cd exo
 $ python -m venv exo_env
@@ -66,7 +68,7 @@ $ .\exo_env\Scripts\activate
 $ pip install -e .
 $ source install.sh
 
-in linux OS
+* in linux OS [can make WSL-2 connection with windows]
 
 $ python -m venv --without-pip exo_env
 $ source exo_env/bin/activate
