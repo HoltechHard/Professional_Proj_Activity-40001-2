@@ -29,7 +29,7 @@
 --------------------------------------------------------    
   
 **Главные Подтемы:**   
-  * **Теория** - Основы реляционных баз данных и запросов: https://drive.google.com/file/d/1EFpdcIr5fvjm7jkieTvtb1PF8jfAM2XI/view?usp=sharing  
+  * **Теория** - Основы реляционных баз данных и запросов: https://drive.google.com/file/d/1YpFbpcOd6HOhGBMWQ64NAjEGYZosKyTA/view?usp=drive_link    
   * **Практика** - Создание схемы и генерация запросов с использованием базы данных Adventure Works 2014 с PostgreSQL    
   * Установка и настройка СУБД PostgreSQL и PgAdmin-4   
   * Процесс ETL (извлечение-преобразование-загрузка) для восстановления исходной базы данных Adventure Works 2014   
