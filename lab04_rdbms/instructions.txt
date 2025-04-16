@@ -1,0 +1,65 @@
+==========================================================
+|       INSTRUCTIONS TO LOAD ADVENTURE WORKS OLTP-DB     |
+==========================================================
+
+1) install pgAdmin4 for postgresql and add the dbms to PATH
+
+> Control panel > system > advanced system settings > environment variables
+
+In system variables select PATH -> Edit, and add the next 2 paths:
+
+C:\Program Files\PostgreSQL\15\bin
+C:\Program Files\PostgreSQL\15\lib
+
+2) check in the terminal the installed version of postgresql
+
+$ psql --version
+
+3) donwload and install ruby. Verify the ruby's installed version
+
+$ ruby --version
+
+4) convert csv tables into usable format for postgres
+
+$ ruby update_csvs.rb
+
+5) create the AdventureWorks database, tables and import the data
+
+execute in power-shell:
+
+$ cd dataset
+$ psql -U postgres -c "CREATE DATABASE adventure_works_oltp;"
+$ psql -U postgres -d adventure_works_oltp -f install.sql
+
+6) after execute the scripts, are available 5 schemas:
+
+- humanresources
+- person
+- production
+- purchasing
+- sales
+
+7) install program DBeaver database managment tool 25.0.2
+
+8) make a connection of postgres database AdventureWorks with DBeaver
+
+> Database > New database connection > All > PostgreSQL
+> fill the next database parameters:
+    - host: localhost
+    - port: 5432
+    - database: adventure_works_oltp
+    - username: postgres
+    - password: <define your postgresql password>
+
+> click Test connection     
+In the case where postgres-jdbc installation is required, allow automatic download 
+of the jdbc connector or load the jdbc-postgresql-42.7.4.jar file.
+
+9) create diagrams for each schema of adventure_works_oltp database
+
+> press in one of the schemas > view diagram
+> file > save as 
+
+10) create backup of adventure_works_oltp using pgAdmin
+
+> right click > backup > select path location to store backup of db
