@@ -35,12 +35,13 @@ inner join "production".product as pr
 on sc.productsubcategoryid = pr.productsubcategoryid
 group by sc.name;
 
--- 7) group of total amount of purchases by product
-select pr.name, sum(pod.orderqty * pod.unitprice) 
+-- 7) group of total amount of purchases by product filtering total < 5000
+select pr.name, sum(pod.orderqty * pod.unitprice)
 from "purchasing".purchaseorderdetail as pod
 inner join "production".product as pr
 on pod.productid = pr.productid
-group by pr.name;
+group by pr.name
+having sum(pod.orderqty * pod.unitprice) < 5000;
 
 -- 8) total of products
 select count(pr.productid) 
