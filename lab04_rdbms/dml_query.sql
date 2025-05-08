@@ -9,12 +9,15 @@ select sc.productsubcategoryid, sc.productcategoryid, sc.name
 from "production".productsubcategory as sc;
 
 -- 2) list of products
-select pr.productid, pr.name
-from "production".product as pr;
+select pr.productid, pr.name, pr.listprice
+from "production".product as pr
+where pr.listprice > 200
+order by pr.listprice asc;
 
 -- 3) list of purchase order heads
 select ord.purchaseorderid, ord.vendorid, ord.employeeid, ord.subtotal
-from "purchasing".purchaseorderheader ord;
+from "purchasing".purchaseorderheader ord
+
 
 -- 4) list of purchase order details
 select pod.purchaseorderid, pod.purchaseorderdetailid, pod.productid, pod.orderqty, pod.unitprice 
